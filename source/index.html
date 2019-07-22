@@ -9,17 +9,19 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-              <li class="site-list__item"><a href="#">Фото и видео</a></li>
-              <li class="site-list__item"><a href="#">Форма отзыва</a></li>
+              <li class="site-list__item site-list__item--second"><a href="photos.html">Фото и видео</a></li>
+              <li class="site-list__item site-list__item--third"><a href="form.html">Форма отзыва</a></li>
               <li class="site-list__item"><a href="#">HTML Academy</a></li>
             </ul>
           </div>
         </nav>
-        <a class="page-header__logo"><img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
+        <div class="page-header__logo-container">
+            <a class="page-header__logo"><img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
+            <button class="page-header__toggle" type="button">Открыть меню</button>
+          </div>
       </header>
       <main class="main-page-container">
         <h1 class="visually-hidden">Седона</h1>
@@ -57,7 +59,7 @@
               </div>
             </div>
             <div class="cause cause--picture">
-              <figure class="cause__img">
+              <figure class="cause__img cause__img--second">
                 <img src="../img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото города">
                 <figcaption class="cause__desc">
                   <h3 class="cause__title">Там есть Мост дьявола</h3>
@@ -68,20 +70,23 @@
             </div>
             <div class="cause">
               <div class="cause__item cause__item--border">
-                <h3 class="cause__title">Небольшая площадь</h2>
+                <div class="cause__item-wrapper">
+                <h3 class="cause__title">Небольшая площадь</h3>
                 <p class="cause__num">— №3 —</p>
                 <p class="cause__text">Вce интересные места находятся очень близко</p>
-              </div>
+              </div></div>
               <div class="cause__item cause__item--border">
-                <h3 class="cause__title">Красивая дорога</h2>
+                <div class="cause__item-wrapper">
+                <h3 class="cause__title">Красивая дорога</h3>
                 <p class="cause__num">— №4 —</p>
-                <p class="cause__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
+                <p class="cause__text ">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div></div>
               <div class="cause__item ">
-                <h3 class="cause__title">Мало туристов</h2>
+                <div class="cause__item-wrapper">
+                <h3 class="cause__title">Мало туристов</h3>
                 <p class="cause__num">— №5 —</p>
                 <p class="cause__text">Большинство едет в гранд каньон и толпится там</p>
-              </div>
+              </div></div>
             </div>
           </section>
           <section class="search-hotels">

@@ -8,17 +8,19 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="#">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a href="#">Фото и видео</a></li>
-            <li class="site-list__item"><a href="#">Форма отзыва</a></li>
+            <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+            <li class="site-list__item site-list__item--second"><a href="photos.html">Фото и видео</a></li>
+            <li class="site-list__item site-list__item--third"><a href="form.html">Форма отзыва</a></li>
             <li class="site-list__item"><a href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
-      <a class="page-header__logo"><img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
+      <div class="page-header__logo-container">
+        <a class="page-header__logo"><img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
     </header>
     <main class="page-container">
       <h1 class="visually-hidden">Фото и видео</h1>
@@ -32,46 +34,62 @@
         <div class="user-photos">
           <ul class="user-photos__list">
             <li class="user-photos__item">
-              <div class="user-photos__item-container">
+              <div class="user-photos__item-container user-photos__item-container--first">
                 <img class="user-photos__image" src="http://placehold.it/280x280" width="280" height="280" alt="Народные просторы">
-                <p class="user-photos__title">Народные просторы</p>
-                <p class="user-photos__autor">Автор фото: Борис</p>
-                <div class="user-photos__like">
-                  <img class="user-photos__like-img" src="http://placehold.it/23x21" width="23" height="21" alt="Like">
-                  <p class="user-photos__like-num">1350</p>
+                <div class="user-photos__photo-caption">
+                  <div class="user-photos__photo-legend">
+                    <p class="user-photos__title">Народные просторы</p>
+                    <p class="user-photos__autor">Автор фото: Борис</p>
+                  </div>
+                  <div class="user-photos__like">
+                    <img class="user-photos__like-img" src="http://placehold.it/23x21" width="23" height="21" alt="Like">
+                    <p class="user-photos__like-num">1350</p>
+                  </div>
                 </div>
               </div>
             </li>
             <li class="user-photos__item">
               <div class="user-photos__item-container">
                 <img class="user-photos__image" src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
-                <p class="user-photos__title">Местная растительность</p>
-                <p class="user-photos__autor">Автор фото: Сергей</p>
-                <div class="user-photos__like">
-                  <img class="user-photos__like-img" src="http://placehold.it/23x21" width="23" height="21" alt="Like">
-                  <p class="user-photos__like-num">143</p>
+                <div class="user-photos__photo-caption">
+                  <div class="user-photos__photo-legend">
+                    <p class="user-photos__title">Местная растительность</p>
+                    <p class="user-photos__autor">Автор фото: Сергей</p>
+                  </div>
+                  <div class="user-photos__like">
+                    <img class="user-photos__like-img" src="http://placehold.it/23x21" width="23" height="21" alt="Like">
+                    <p class="user-photos__like-num">143</p>
+                  </div>
                 </div>
               </div>
             </li>
             <li class="user-photos__item">
               <div class="user-photos__item-container">
                 <img class="user-photos__image" src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
-                <p class="user-photos__title">Дорога на север</p>
-                <p class="user-photos__autor">Автор фото: Петр</p>
-                <div class="user-photos__like">
-                  <img class="user-photos__like-img" src="http://placehold.it/23x21" width="23" height="21" alt="Like">
-                  <p class="user-photos__like-num">96</p>
+                <div class="user-photos__photo-caption">
+                  <div class="user-photos__photo-legend">
+                    <p class="user-photos__title">Дорога на север</p>
+                    <p class="user-photos__autor">Автор фото: Петр</p>
+                  </div>
+                  <div class="user-photos__like">
+                    <img class="user-photos__like-img" src="http://placehold.it/23x21" width="23" height="21" alt="Like">
+                    <p class="user-photos__like-num">96</p>
+                  </div>
                 </div>
               </div>
             </li>
             <li class="user-photos__item">
               <div class="user-photos__item-container">
                 <img class="user-photos__image" src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
-                <p class="user-photos__title">Мост дьявола</p>
-                <p class="user-photos__autor">Автор фото: Антон</p>
-                <div class="user-photos__like">
-                  <img class="user-photos__like-img" src="http://placehold.it/23x21" width="23" height="21" alt="Like">
-                  <p class="user-photos__like-num">254</p>
+                <div class="user-photos__photo-caption">
+                  <div class="user-photos__photo-legend">
+                    <p class="user-photos__title">Мост дьявола</p>
+                    <p class="user-photos__autor">Автор фото: Антон</p>
+                  </div>
+                  <div class="user-photos__like">
+                    <img class="user-photos__like-img" src="http://placehold.it/23x21" width="23" height="21" alt="Like">
+                    <p class="user-photos__like-num">254</p>
+                  </div>
                 </div>
               </div>
             </li>

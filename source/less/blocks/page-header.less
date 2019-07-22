@@ -1,3 +1,45 @@
 .page-header {
-  margin-bottom: -27px;
+  margin: 0 auto -27px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    max-width: 768px;
+    height: 56px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-container {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+  }
+}
+
+.page-header__logo {
+  width: 102px;
+  height: 83px;
+}
+
+.page-header__toggle {
+  position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+
