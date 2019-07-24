@@ -1,6 +1,6 @@
 .welcome {
-  max-width: 1200px;
-  min-width: 320px;
+  max-width: 320px;
+  margin: 0 auto;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position: center;
@@ -9,6 +9,25 @@
   &--inner {
     background-size: 750px;
     background-position: center -215px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome {
+    max-width: 768px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome {
+    max-width: 1200px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &--inner {
+      background-size: 1200px;
+      background-position: center -215px;
+    }
   }
 }
 
@@ -24,5 +43,27 @@
     background-image: url("../img/text-sedona.svg");
     background-size: 229px;
     height: 158px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__text {
+    height: 462px;
+    background-size: 460px;
+
+    &--inner {
+      background-size: 460px;
+      height: 290px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__text {
+    &--inner {
+      background-image: url("../img/text-sedona.svg");
+      background-size: 460px;
+      height: 291px;
+    }
   }
 }
