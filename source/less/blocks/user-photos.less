@@ -3,11 +3,41 @@
   padding: 0;
   list-style: none;
   border-top: 1px solid #efefef;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__list {
+    max-width: 648px;
+    border-top: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photos__list {
+    max-width: 1200px;
+  }
 }
 
 .user-photos__item {
-  width: 320px;
+  margin: 0 auto;
   border-bottom: 1px solid #efefef;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__item {
+    margin: 0;
+    border-bottom: none;
+
+    &:nth-child(2n+3) .user-photos__photo-caption {
+      background-color: #eaeaea;
+    }
+  }
 }
 
 .user-photos__item-container {
@@ -15,28 +45,98 @@
   margin: 21px auto 0 auto;
 }
 
+@media (min-width: @tablet-width) {
+  .user-photos__item-container {
+    width: 324px;
+    margin: 0;
+
+    &--first {
+      width: 648px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photos__item-container {
+    width: 400px;
+
+    &--first {
+      width: 1200px;
+    }
+  }
+}
+
 .user-photos__image {
   display: block;
 }
 
+.user-photos__photo-caption {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__photo-caption {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photos__photo-caption {
+    margin-top: -86px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photos__item-container {
+    width: 400px;
+
+    &--first {
+      width: 1200px;
+    }
+  }
+}
+
+.user-photos__photo-legend {
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__photo-legend {
+    text-align: left;
+    margin: 22px 0 22px 21px;
+  }
+}
+
 .user-photos__title {
   margin: 21px auto 0 auto;
-  text-align: left;
   font-weight: 700;
-  line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__title {
+    margin: 0;
+  }
 }
 
 .user-photos__autor {
   margin: 0 auto;
-  text-align: left;
-  line-height: 24px;
+  text-transform: none;
 }
 
 .user-photos__like {
   margin-bottom: 21px;
-  padding-top: 11px;
+  margin-top: 11px;
   display: flex;
   flex-direction: row;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__like {
+    margin: 28px 21px 0 0;
+  }
 }
 
 .user-photos__like-num {
