@@ -26,6 +26,10 @@
   margin: 0 auto;
 }
 
+.cause__img picture {
+  height: 256px;
+}
+
 @media (min-width: @tablet-width) {
   .cause__img {
     flex-direction: row-reverse;
@@ -33,6 +37,17 @@
     &--second {
       flex-direction: row;
     }
+  }
+
+  .cause__img img {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cause__img img {
+    width: 800px;
   }
 }
 
@@ -93,6 +108,7 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .cause__item {
     max-width: 256px;
   }

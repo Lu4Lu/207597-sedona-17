@@ -36,7 +36,11 @@
             <p class="about-sity__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             <div class="cause cause--picture">
               <figure class="cause__img">
-                <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города">
+                <picture>
+                  <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
+                  <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
+                  <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города">
+                </picture>
                 <figcaption class="cause__desc cause__desc--triangle">
                   <h3 class="cause__title">Настоящий городок</h3>
                   <p class="cause__num">— №1 —</p>
@@ -60,7 +64,11 @@
             </div>
             <div class="cause cause--picture">
               <figure class="cause__img cause__img--second">
-                <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото города">
+                <picture>
+                  <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+                  <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+                  <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+                </picture>
                 <figcaption class="cause__desc">
                   <h3 class="cause__title">Там есть Мост дьявола</h3>
                   <p class="cause__num">— №2 —</p>
