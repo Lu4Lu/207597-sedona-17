@@ -40,6 +40,14 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .user-photos__item {
+    &:nth-child(2n+3) .user-photos__photo-caption {
+      background-color: #000000;
+    }
+  }
+}
+
 .user-photos__item-container {
   width: 280px;
   margin: 21px auto 0 auto;
@@ -68,9 +76,21 @@
 
 .user-photos__image {
   display: block;
+  height: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__image {
+    height: 267px;
+
+    &--first {
+      height: 400px;
+    }
+  }
 }
 
 .user-photos__photo-caption {
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -86,6 +106,13 @@
 @media (min-width: @desktop-width) {
   .user-photos__photo-caption {
     margin-top: -86px;
+    background-color: #000000;
+    opacity: 0.3;
+    color: #ffffff;
+
+    &--first {
+      margin-top: -86px;
+    }
   }
 }
 

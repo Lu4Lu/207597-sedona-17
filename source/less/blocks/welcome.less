@@ -14,6 +14,10 @@
   .welcome {
     max-width: 768px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &--inner {
+      background-size: 766px;
+    }
   }
 }
 
@@ -35,19 +39,19 @@
   background: url("../img/text-sedona-index.svg") center/281px no-repeat, url("../img/bg-intro-triangle-mobile.svg") bottom/cover no-repeat;
 
   &--inner {
-    background-image: url("../img/text-sedona.svg");
-    background-size: 229px;
+    background: url("../img/text-sedona.svg") center/229px no-repeat, url("../img/bg-intro-triangle-mobile.svg") bottom/cover no-repeat;
     height: 158px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .welcome__text {
-    height: 462px;
-    background-size: 460px;
+    height: 517px;
+    background: url("../img/text-sedona-index.svg") center/460px no-repeat, url("../img/bg-intro-triangle-tablet.svg") bottom/768px no-repeat;
+
 
     &--inner {
-      background-size: 460px;
+      background: url("../img/text-sedona.svg") center/460px no-repeat, url("../img/bg-intro-triangle-tablet.svg") bottom/768px no-repeat;
       height: 290px;
     }
   }
@@ -55,9 +59,10 @@
 
 @media (min-width: @desktop-width) {
   .welcome__text {
+    background: url("../img/text-sedona-index.svg") center/460px no-repeat, url("../img/bg-intro-triangle-desktop.svg") bottom/1200px no-repeat;
+
     &--inner {
-      background-image: url("../img/text-sedona.svg");
-      background-size: 460px;
+      background: url("../img/text-sedona.svg") center/460px no-repeat, url("../img/bg-intro-triangle-desktop.svg") bottom/1200px no-repeat;
       height: 291px;
     }
   }

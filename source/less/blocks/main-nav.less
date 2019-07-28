@@ -38,7 +38,7 @@
   text-align: center;
   margin: auto;
   width: 320px;
-  height: 55px;
+  height: 56px;
   list-style: none;
   background-color: #81b3d2;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
@@ -56,6 +56,20 @@
 
     &--third {
       margin-left: 78px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    width: 239px;
+
+    &--second {
+      margin-right: 122px;
+    }
+
+    &--third {
+      margin-left: 122px;
     }
   }
 }
