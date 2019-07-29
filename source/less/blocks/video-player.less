@@ -28,8 +28,8 @@
     margin-top: -93px;
     justify-content: space-between;
     width: 648px;
-    background-color: #000000;
-    opacity: 0.6;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -39,12 +39,21 @@
   }
 }
 
+.video-player__buttons svg {
+  fill: #5c6870;
+}
+
+@media (min-width: @tablet-width) {
+  .video-player__buttons svg {
+    fill: #ffffff;
+  }
+}
+
 .video-player__scale-wrapper {
   width: 280px;
   height: 45px;
-  background-color: #000000;
-  opacity: 0.6;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -52,6 +61,7 @@
   .video-player__scale-wrapper {
     order: 2;
     width: 389px;
+    background-color: transparent;
   }
 }
 

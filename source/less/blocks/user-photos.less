@@ -43,7 +43,7 @@
 @media (min-width: @desktop-width) {
   .user-photos__item {
     &:nth-child(2n+3) .user-photos__photo-caption {
-      background-color: #000000;
+      background-color: rgba(0, 0, 0, 0.4);
     }
   }
 }
@@ -106,8 +106,8 @@
 @media (min-width: @desktop-width) {
   .user-photos__photo-caption {
     margin-top: -86px;
-    background-color: #000000;
-    opacity: 0.3;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
     color: #ffffff;
 
     &--first {

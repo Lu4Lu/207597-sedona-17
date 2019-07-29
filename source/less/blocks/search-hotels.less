@@ -1,12 +1,22 @@
 .search-hotels {
-  margin: 0 auto;
-  padding-top: 33px;
-  padding-bottom: 49px;
+  margin: 27px auto 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .search-hotels {
+    margin: 55px auto 0 auto;
+  }
 }
 
 .search-hotels__wrapper {
   margin: 0 auto;
   max-width: 265px;
+}
+
+@media (min-width: @tablet-width) {
+  .search-hotels__wrapper {
+    max-width: 468px;
+  }
 }
 
 .search-hotels__title {
@@ -16,10 +26,34 @@
   font-weight: 700;
 }
 
+@media (min-width: @tablet-width) {
+  .search-hotels__title {
+    font-size: 30px;
+  }
+}
+
 .search-hotels__text {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 40px;
+  padding-top: 19px;
+  padding-bottom: 35px;
   color: #333333;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .search-hotels__text {
+    padding-top: 31px;
+    padding-bottom: 42px;
+  }
+}
+
+.search-hotels__button {
+  margin-bottom: 49px;
+}
+
+@media (min-width: @tablet-width) {
+  .search-hotels__button {
+    width: 458px;
+    margin-bottom: 58px;
+  }
 }
