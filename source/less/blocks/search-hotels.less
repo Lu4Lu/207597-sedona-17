@@ -40,10 +40,22 @@
   line-height: 24px;
 }
 
+@media only screen and (max-width: @tablet-width) {
+  .search-hotels__text br {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .search-hotels__text {
     padding-top: 31px;
     padding-bottom: 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .search-hotels__text {
+    padding-bottom: 47px;
   }
 }
 
@@ -56,4 +68,15 @@
     width: 458px;
     margin-bottom: 58px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .search-hotels__button {
+    margin-bottom: 66px;
+  }
+}
+
+.search-hotels picture {
+  display: block;
+  height: 350px;
 }
