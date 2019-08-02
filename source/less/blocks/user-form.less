@@ -1,0 +1,50 @@
+.user-form {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-form {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-form {
+    width: 1200px;
+  }
+}
+
+.user-form legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.user-form__name-list {
+  margin: 0 auto;
+  padding: 21px 0 0 0;
+  list-style: none;
+  text-align: left;
+}
+
+.user-form__name-list__item {
+  padding: 0 0 20px 17px;
+  margin: 0 auto;
+}
+
+.user-form__name-list__item label {
+  padding-right: 13px;
+}
+
+.user-form__name-list__item input[type="text"] {
+  padding: 20px 10px 19px 22px;
+  width: 173px;
+}
+
+.user-form__name-list__item:first-child input[type="text"] {
+  padding: 19px 19px 19px 19px;
+  width: 190px
+}
