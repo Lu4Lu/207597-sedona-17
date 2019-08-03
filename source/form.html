@@ -12,7 +12,7 @@
         <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+              <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
               <li class="site-list__item site-list__item--second"><a href="photos.html">Фото и видео</a></li>
               <li class="site-list__item site-list__item--third"><a href="form.html">Форма отзыва</a></li>
               <li class="site-list__item"><a href="#">HTML Academy</a></li>
@@ -54,46 +54,46 @@
             <fieldset class="user-form__name">
               <legend class="user-form__name-title">Представьтесь:</legend>
               <ul class="user-form__name-list">
-                <li class="user-form__name-list__item">
+                <li class="user-form__name-list__item user-form__name-list__item--name">
                   <label for="name">Имя*:</label>
-                  <input type="text" name="name" id="name" value="Петр">
+                  <input type="text" name="name" id="name" placeholder="Петр">
                 </li>
-                <li class="user-form__name-list__item">
+                <li class="user-form__name-list__item user-form__name-list__item--surname">
                   <label for="surname">Фамилия*:</label>
-                  <input type="text" name="surname" id="surname" value="Иванов">
+                  <input type="text" name="surname" id="surname" placeholder="Иванов">
                 </li>
-                <li class="user-form__name-list__item">
+                <li class="user-form__name-list__item user-form__name-list__item--patronymic">
                   <label for="patronymic">Отчество:</label>
-                  <input type="text" name="patronymic" id="patronymic" value="Александрович">
+                  <input type="text" name="patronymic" id="patronymic" placeholder="Александрович">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="user-form__info">
               <legend class="user-form__info-title">Контактная информация</legend>
               <ul class="user-form__info-list info-list">
-                <li class="user-form__info-list__item">
+                <li class="user-form__info-list__item user-form__info-list__item--number">
                   <label for="number">Контактный телефон*:</label>
-                  <input type="text" name="number" id="number" value="Введите телефон">
+                  <input type="text" name="number" id="number" placeholder="Введите телефон">
                 </li>
-                <li class="user-form__info-list__item">
-                  <label for="e-mail">Электронная почта*:</label>
-                  <input type="text" name="e-mail" id="e-mail" value="Введите e-mail">
+                <li class="user-form__info-list__item user-form__info-list__item--email">
+                  <label for="email">Электронная почта*:</label>
+                  <input type="text" name="email" id="email" placeholder="Введите e-mail">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="user-form__impressions">
-              <legend class="user-form__impressions-title">Ваше Общее впечатление:</legend>
+              <legend class="user-form__impressions-title">Ваше общее впечатление:</legend>
               <ul class="user-form__impressions-list">
                 <li class="user-form__impressions-list__item">
-                  <input type="radio" name="answer" id="answer-one" value="Скорее положительное" checked>
+                  <input class="visually-hidden user-form__impressions-list__item-radio" type="radio" name="answer" id="answer-one" value="Скорее положительное" checked>
                   <label for="answer-one">Скорее положительное</label>
                 </li>
                 <li class="user-form__impressions-list__item">
-                  <input type="radio" name="answer" id="answer-two" value="Скорее отрицательное">
+                  <input class="visually-hidden user-form__impressions-list__item-radio" type="radio" name="answer" id="answer-two" value="Скорее отрицательное">
                   <label for="answer-two">Скорее отрицательное</label>
                 </li>
                 <li class="user-form__impressions-list__item">
-                  <input type="radio" name="answer" id="answer-three" value="Затрудняюсь ответить">
+                  <input class="visually-hidden user-form__impressions-list__item-radio" type="radio" name="answer" id="answer-three" value="Затрудняюсь ответить">
                   <label for="answer-three">Затрудняюсь ответить</label>
                 </li>
               </ul>
@@ -102,28 +102,28 @@
               <legend class="user-form__showplace-title">Посещенные достопримечательности:</legend>
               <ul class="user-form__showplace-list">
                 <li class="user-form__showplace-list__item">
-                  <input type="checkbox" name="showplace-one" id="showplace-one" value="Мост Дьявола" checked>
+                  <input class="visually-hidden user-form__showplace-list__item-checkbox" type="checkbox" name="showplace-one" id="showplace-one" value="Мост Дьявола" checked>
                   <label for="showplace-one">Мост Дьявола</label>
                 </li>
                 <li class="user-form__showplace-list__item">
-                  <input type="checkbox" name="showplace-two" id="showplace-one" value="Гора-Колокол" checked>
+                  <input class="visually-hidden user-form__showplace-list__item-checkbox" type="checkbox" name="showplace-two" id="showplace-two" value="Гора-Колокол" checked>
                   <label for="showplace-two">Гора-Колокол</label>
                 </li>
                 <li class="user-form__showplace-list__item">
-                  <input type="checkbox" name="showplace-three" id="showplace-one" value="Слайд-парк" checked>
+                  <input class="visually-hidden user-form__showplace-list__item-checkbox" type="checkbox" name="showplace-three" id="showplace-three" value="Слайд-парк" checked>
                   <label for="showplace-three">Слайд-парк</label>
                 </li>
                 <li class="user-form__showplace-list__item">
-                  <input type="checkbox" name="showplace-four" id="showplace-one" value="Красные скалы">
+                  <input class="visually-hidden user-form__showplace-list__item-checkbox" type="checkbox" name="showplace-four" id="showplace-four" value="Красные скалы">
                   <label for="showplace-four">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="user-form__comment">
               <legend class="user-form__comment-title">Опишите свои эмоции:</legend>
-              <textarea name="comment" rows="10" cols="20">Опишите подробно все свои восторги</textarea>
+              <textarea name="comment" rows="10" cols="20" value placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <input type="submit" value="Отправить отзыв">
+            <button type="submit" class="user-form__button button">Отправить отзыв</button>
           </form>
         </div>
       </section>

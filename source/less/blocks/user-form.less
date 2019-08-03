@@ -48,3 +48,145 @@
   padding: 19px 19px 19px 19px;
   width: 190px
 }
+
+.user-form__info-title {
+  border-top: 1px solid #f4f4f4;
+  padding: 24px 0 29px 0;
+}
+
+.user-form__info-list {
+  padding: 0;
+  list-style: none;
+}
+.user-form__info-list__item {
+  padding: 0 20px 0 20px;
+  text-align: left;
+}
+
+.user-form__info-list__item label {
+  padding-left: 23px;
+}
+
+.user-form__info-list__item input {
+  margin: 14px 0 20px 0;
+  padding: 22px 22px 19px 22px;
+  width: 236px;
+}
+
+.user-form__impressions-title {
+  padding: 24px 0 34px 0;
+  border-top: 1px solid #f4f4f4;
+}
+
+.user-form__impressions-list {
+  padding: 0 0 0 77px;
+  list-style: none;
+  text-align: left;
+}
+
+.user-form__impressions-list__item {
+  padding-bottom: 40px;
+}
+
+.user-form__impressions-list__item label {
+  margin: 0;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.user-form__impressions-list__item-radio+label::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -60px;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #f2f2f2;
+}
+
+.user-form__impressions-list__item-radio+label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -47px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #000000;
+}
+
+.user-form__impressions-list__item-radio:not(:checked) + label::after {
+  opacity: 0;
+}
+
+.user-form__impressions-list__item-radio:checked + label::after {
+  opacity: 1;
+}
+
+.user-form__showplace-title {
+  padding: 24px 0 26px 0;
+  border-top: 1px solid #f4f4f4;
+}
+
+.user-form__showplace-list {
+  padding: 0 0 0 78px;
+  list-style: none;
+  text-align: left;
+}
+
+.user-form__showplace-list__item {
+  padding-bottom: 30px;
+}
+
+.user-form__showplace-list__item label {
+  margin: 0;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.user-form__showplace-list__item-checkbox+label::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -60px;
+  width: 46px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.user-form__showplace-list__item-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -60px;
+  width: 46px;
+  height: 46px;
+  border-radius: 5px;
+  background: #f2f2f2 url("../img/tick.svg") center/24px no-repeat;
+}
+
+.user-form__comment {
+  margin-bottom: 51px;
+}
+
+.user-form__comment-title {
+  padding: 24px 0 21px 0;
+  border-top: 1px solid #f4f4f4;
+}
+
+.user-form__comment textarea {
+  padding: 22px 21px 22px 21px;
+  width: 237px;
+  height: 116px;
+  resize: none;
+}
