@@ -1,14 +1,12 @@
 .welcome {
   max-width: 320px;
   margin: 0 auto;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #d5e6f0 url("../img/bg-back-mobile@1x.jpg") center/cover no-repeat;
+
 
   &--inner {
-    background-size: 750px;
-    background-position: center -215px;
+    background-size: 755px;
+    background-position: center -227px;
   }
 }
 
@@ -16,6 +14,10 @@
   .welcome {
     max-width: 768px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &--inner {
+      background-size: 766px;
+    }
   }
 }
 
@@ -33,37 +35,77 @@
 
 .welcome__text {
   margin: 0;
-  height: 389px;
-  background-image: url("../img/text-sedona-index.svg");
-  background-position: center;
-  background-size: 281px;
-  background-repeat: no-repeat;
+  padding-top: 89px;
+  padding-bottom: 80px;
+  background: url("../img/bg-intro-triangle-mobile.svg") bottom/cover no-repeat;
 
   &--inner {
-    background-image: url("../img/text-sedona.svg");
-    background-size: 229px;
-    height: 158px;
+    padding-top: 51px;
+    padding-bottom: 62px;
+    background: url("../img/bg-intro-triangle-mobile.svg") bottom/cover no-repeat;
   }
 }
 
 @media (min-width: @tablet-width) {
   .welcome__text {
-    height: 462px;
-    background-size: 460px;
+    padding-top: 77px;
+    padding-bottom: 84px;
+    background: url("../img/bg-intro-triangle-tablet.svg") bottom/768px no-repeat;
 
     &--inner {
-      background-size: 460px;
-      height: 290px;
+      padding-top: 94px;
+      padding-bottom: 110px;
+      background: url("../img/bg-intro-triangle-tablet.svg") bottom/768px no-repeat;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .welcome__text {
+    padding-top: 103px;
+    padding-bottom: 114px;
+    background: url("../img/bg-intro-triangle-desktop.svg") bottom/1200px no-repeat;
+
     &--inner {
-      background-image: url("../img/text-sedona.svg");
-      background-size: 460px;
-      height: 291px;
+      background: url("../img/bg-intro-triangle-desktop.svg") bottom/1200px no-repeat;
     }
+  }
+}
+
+.welcome__text img {
+  width: 281px;
+  height: 214px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__text img {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__text img {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+.welcome__text--inner img {
+  width: 229px;
+  height: 39px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__text--inner img {
+    width: 460px;
+    height: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__text--inner img {
+    width: 460px;
+    height: 79px;
   }
 }
