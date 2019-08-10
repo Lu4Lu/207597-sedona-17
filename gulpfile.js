@@ -49,7 +49,7 @@ gulp.task("webp", function() {
 gulp.task("sprite", function() {
   return gulp.src([
       "source/img/icon-video-*.svg",
-      "source/img/htmlacademy.svg"])
+      "source/img/logo-htmlacademy.svg"])
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -95,7 +95,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css", "svg"));
+  gulp.watch("source/less/**/*.less", gulp.series("css", "sprite"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
