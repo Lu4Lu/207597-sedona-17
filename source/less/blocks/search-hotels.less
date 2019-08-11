@@ -55,7 +55,7 @@
 
 @media (min-width: @desktop-width) {
   .search-hotels__text {
-    padding-bottom: 47px;
+    padding-bottom: 46px;
   }
 }
 
@@ -73,6 +73,27 @@
 @media (min-width: @desktop-width) {
   .search-hotels__button {
     margin-bottom: 66px;
+  }
+}
+
+.search-hotels__map {
+  margin: 0 auto;
+  height: 350px;
+}
+
+.search-hotels__map iframe {
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .search-hotels__map iframe {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .search-hotels__map iframe {
+    width: 1200px;
   }
 }
 

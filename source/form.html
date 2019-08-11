@@ -79,12 +79,28 @@
               <legend class="user-form__info-title">Контактная информация:</legend>
               <ul class="user-form__info-list info-list">
                 <li class="info-list__item info-list__item--number">
-                  <label for="number">Контактный телефон*:</label>
+                  <label for="number"><span class="info-list__number-title">Контактный</span> телефон*:</label>
                   <input type="tel" name="number" id="number" placeholder="Введите телефон">
+                  <div class="info-list__icon">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                      <g id="Page-1">
+                        <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                          <g id="phone" transform="translate(85.000000, 126.000000)">
+                            <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
                 </li>
                 <li class="info-list__item info-list__item--email">
                   <label for="email">Электронная почта*:</label>
                   <input type="email" name="email" id="email" placeholder="Введите e-mail">
+                  <div class="info-list__icon info-list__icon--mail">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                    </svg>
+                  </div>
                 </li>
               </ul>
             </fieldset>
@@ -108,7 +124,7 @@
             <fieldset class="user-form__showplace">
               <legend class="user-form__showplace-title">Посещенные достопримечательности:</legend>
               <ul class="user-form__showplace-list showplace-list">
-                <li class="showplace-list__item">
+                <li class="showplace-list__item showplace-list__item--one">
                   <input class="visually-hidden showplace-list__item-checkbox" type="checkbox" name="showplace-one" id="showplace-one" value="Мост Дьявола" checked="">
                   <label for="showplace-one">Мост Дьявола</label>
                 </li>
@@ -116,7 +132,7 @@
                   <input class="visually-hidden showplace-list__item-checkbox" type="checkbox" name="showplace-two" id="showplace-two" value="Гора-Колокол" checked="">
                   <label for="showplace-two">Гора-Колокол</label>
                 </li>
-                <li class="showplace-list__item">
+                <li class="showplace-list__item showplace-list__item--three">
                   <input class="visually-hidden showplace-list__item-checkbox" type="checkbox" name="showplace-three" id="showplace-three" value="Слайд-парк" checked="">
                   <label for="showplace-three">Слайд-парк</label>
                 </li>
@@ -131,6 +147,7 @@
               <textarea name="comment" rows="10" cols="20" value="" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button type="submit" class="user-form__button button">Отправить отзыв</button>
+            <p class="user-form__footnote">* — обязательные поля</p>
           </form>
         </div>
       </section>
