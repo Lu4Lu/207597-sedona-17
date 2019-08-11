@@ -2,9 +2,21 @@
   padding-top: 40px;
 }
 
+@media (min-width: @tablet-width) {
+  .form-intro {
+    padding-top: 77px;
+  }
+}
+
 .form-intro__title {
   margin: 0 auto;
   font-size: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-intro__title {
+    font-size: 31px;
+  }
 }
 
 .form-intro__text {
@@ -15,9 +27,26 @@
   line-height: 24px;
 }
 
+@media (min-width: @tablet-width) {
+  .form-intro__text {
+    padding-top: 33px;
+    max-width: 439px;
+  }
+}
+
 .form-intro__form-wrapper {
+  margin: 0 auto;
   padding-top: 17px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #f4f4f4;
 }
+
+@media (min-width: @tablet-width) {
+  .form-intro__form-wrapper {
+    padding-top: 57px;
+    border: none;
+  }
+}
+
+
